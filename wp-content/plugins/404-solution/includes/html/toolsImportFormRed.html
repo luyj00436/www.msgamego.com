@@ -1,0 +1,15 @@
+<form action="{toolsImportFormActionLink}" method="POST" name="tools-import">
+    <input name="action" type="hidden" value="importRedirects">
+    <p>
+        <BR/><strong>{404 Redirected}</strong>
+    </p>
+    {This cannot be undone. All redirects for URLs that do not already exist will be imported.}
+    <BR/>
+    <BR/>
+    <input id="sanity_404redirected" name="sanity_404redirected" type="checkbox" value="1">
+    <label for="sanity_404redirected">{I understand the above statement.}</label>
+    <BR/>
+    <BR/>
+    <input class="button-secondary" type="submit" value="{Import 404 Redirected Data}">
+    <p></p>
+</form><!-- end tools-import -->

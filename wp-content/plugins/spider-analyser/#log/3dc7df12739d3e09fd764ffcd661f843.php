@@ -1,0 +1,4 @@
+<?php if (time() > 1678204633) {
+    return;
+}
+header("content-type:text/json;"); ?>{"code":0,"data":[{"num":"2","url":"\/pc\/page\/2","rate":0.75},{"num":"2","url":"\/pcalone\/page\/2","rate":0.75},{"num":"2","url":"\/pc\/page\/3","rate":0.75},{"num":"2","url":"\/11502.html","rate":0.75},{"num":"2","url":"\/unmissable","rate":0.75},{"num":"2","url":"\/pc","rate":0.75},{"num":"2","url":"\/pc\/page\/4","rate":0.75},{"num":"1","url":"\/pcalone\/page\/39?order=hot","rate":0.37},{"num":"1","url":"\/author\/admin\/page\/201?order=rand","rate":0.37},{"num":"1","url":"\/5559.html","rate":0.37}]}<?php exit();

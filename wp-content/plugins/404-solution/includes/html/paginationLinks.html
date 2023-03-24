@@ -1,0 +1,29 @@
+<div class="tablenav-pages abj404-pagination-right" data-pagination-ajax-url="{data-pagination-ajax-url}">
+    {showSearchFilter}
+    <input data-lpignore='true' disabled name="searchFilter" placeholder="{(Type to filter)}"
+           type="search" value="{filterText}"/>
+    <!-- This comment allows us t hide or show the search filter. -->
+
+    {TEXT_SHOW_ROWS}
+    <select class="perpage" name="perpage" onchange="paginationLinksChange(this);">
+        <option value="3">3</option>
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="25">25</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+        <option value="200">200</option>
+        <option value="500">500</option>
+    </select>
+
+    <span class="displaying-num"> {TEXT_BEFORE_LINKS}</span>
+    <span class="pagination-links">
+    <a class="first-page pagination-link" href="{LINK_FIRST_PAGE}" title="{Go to first page}">«</a>
+    <a class="prev-page pagination-link" href="{LINK_PREVIOUS_PAGE}" title="{Go to previous page}">‹</a>
+    <span class="pagination-text">
+    {TEXT_CURRENT_PAGE}
+    </span>
+    <a class="next-page pagination-link" href="{LINK_NEXT_PAGE}" title="{Go to next page}">›</a>
+    <a class="last-page pagination-link" href="{LINK_LAST_PAGE}" title="{Go to last page}">»</a>
+  </span>
+</div>

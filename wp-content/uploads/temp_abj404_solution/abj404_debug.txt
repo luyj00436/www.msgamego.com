@@ -1,0 +1,85 @@
+2023-03-07 23:23:37 CST (INFO): 640756f9494e13.36472652: Updating database version from 0.0.0 to 2.31.11 (begin).
+2023-03-07 23:23:37 CST (ERROR): Ugh. SQL query error: Table 'msgamego.wp_abj404_lookup' doesn't exist, SQL: 
+/* ------------------ /www/wwwroot/www.msgamego.com/wp-content/plugins/404-solution/includes/sql/correctLookupTableIssue.sql BEGIN ----- */ 
+
+delete from wp_abj404_lookup
+where lkup_value in (
+    select * from (
+	    SELECT DISTINCT lkup_value 
+	    FROM wp_abj404_lookup 
+	    group by lkup_value 
+	    having count(lkup_value) > 1
+    ) a
+)
+
+/* ------------------ /www/wwwroot/www.msgamego.com/wp-content/plugins/404-solution/includes/sql/correctLookupTableIssue.sql END ----- */ 
+, Execution time: 0, DB ver: 5.6.50, Variables: Array
+(
+    [0] => Array
+        (
+            [max_join_size] => 18446744073709551615
+            [sql_big_selects] => 1
+        )
+
+)
+, PHP version: 7.3.32, WP ver: 5.7.1, Plugin ver: 2.31.11, Referrer: https://www.msgamego.com/wp-admin/plugin-install.php?s=404%20Solution&tab=search&type=term, Requested URL: /wp-admin/plugins.php?_wpnonce=504ff47673&action=activate&plugin=404-solution%2F404-solution.php, 
+Stored debug messages: 
+, 
+Trace: #0 /www/wwwroot/www.msgamego.com/wp-content/plugins/404-solution/includes/DataAccess.php(243): ABJ_404_Solution_Logging->errorMessage('Ugh. SQL query ...')
+#1 /www/wwwroot/www.msgamego.com/wp-content/plugins/404-solution/includes/DataAccess.php(450): ABJ_404_Solution_DataAccess->queryAndGetResults('\n/* -----------...')
+#2 /www/wwwroot/www.msgamego.com/wp-content/plugins/404-solution/includes/DatabaseUpgradesEtc.php(75): ABJ_404_Solution_DataAccess->correctDuplicateLookupValues()
+#3 /www/wwwroot/www.msgamego.com/wp-content/plugins/404-solution/includes/DatabaseUpgradesEtc.php(51): ABJ_404_Solution_DatabaseUpgradesEtc->correctIssuesBefore()
+#4 /www/wwwroot/www.msgamego.com/wp-content/plugins/404-solution/includes/DatabaseUpgradesEtc.php(41): ABJ_404_Solution_DatabaseUpgradesEtc->reallyCreateDatabaseTables(true)
+#5 /www/wwwroot/www.msgamego.com/wp-content/plugins/404-solution/includes/PluginLogic.php(386): ABJ_404_Solution_DatabaseUpgradesEtc->createDatabaseTables(true)
+#6 /www/wwwroot/www.msgamego.com/wp-content/plugins/404-solution/includes/PluginLogic.php(346): ABJ_404_Solution_PluginLogic->updateToNewVersionAction(Array)
+#7 /www/wwwroot/www.msgamego.com/wp-content/plugins/404-solution/includes/PluginLogic.php(316): ABJ_404_Solution_PluginLogic->updateToNewVersion(Array)
+#8 /www/wwwroot/www.msgamego.com/wp-content/plugins/404-solution/includes/SpellChecker.php(27): ABJ_404_Solution_PluginLogic->getOptions()
+#9 /www/wwwroot/www.msgamego.com/wp-content/plugins/404-solution/includes/SpellChecker.php(43): ABJ_404_Solution_SpellChecker::getInstance()
+#10 /www/wwwroot/www.msgamego.com/wp-content/plugins/404-solution/includes/Loader.php(51): ABJ_404_Solution_SpellChecker::init()
+#11 /www/wwwroot/www.msgamego.com/wp-content/plugins/404-solution/404-solution.php(76): require_once('/www/wwwroot/ww...')
+#12 /www/wwwroot/www.msgamego.com/wp-admin/includes/plugin.php(670): include_once('/www/wwwroot/ww...')
+#13 /www/wwwroot/www.msgamego.com/wp-admin/plugins.php(58): activate_plugin('404-solution/40...', 'https://www.msg...', false)
+#14 {main}
+2023-03-07 23:23:37 CST (ERROR): Ugh. SQL query error: Table 'msgamego.wp_abj404_spelling_cache' doesn't exist, SQL: delete from wp_abj404_spelling_cache where matchdata is null or matchdata = '', Execution time: 0, DB ver: 5.6.50, Variables: Array
+(
+    [0] => Array
+        (
+            [max_join_size] => 18446744073709551615
+            [sql_big_selects] => 1
+        )
+
+)
+, PHP version: 7.3.32, WP ver: 5.7.1, Plugin ver: 2.31.11, Referrer: https://www.msgamego.com/wp-admin/plugin-install.php?s=404%20Solution&tab=search&type=term, Requested URL: /wp-admin/plugins.php?_wpnonce=504ff47673&action=activate&plugin=404-solution%2F404-solution.php, 
+Stored debug messages: 
+, 
+Trace: #0 /www/wwwroot/www.msgamego.com/wp-content/plugins/404-solution/includes/DataAccess.php(243): ABJ_404_Solution_Logging->errorMessage('Ugh. SQL query ...')
+#1 /www/wwwroot/www.msgamego.com/wp-content/plugins/404-solution/includes/DatabaseUpgradesEtc.php(88): ABJ_404_Solution_DataAccess->queryAndGetResults('delete from wp_...')
+#2 /www/wwwroot/www.msgamego.com/wp-content/plugins/404-solution/includes/DatabaseUpgradesEtc.php(77): ABJ_404_Solution_DatabaseUpgradesEtc->correctMatchData()
+#3 /www/wwwroot/www.msgamego.com/wp-content/plugins/404-solution/includes/DatabaseUpgradesEtc.php(51): ABJ_404_Solution_DatabaseUpgradesEtc->correctIssuesBefore()
+#4 /www/wwwroot/www.msgamego.com/wp-content/plugins/404-solution/includes/DatabaseUpgradesEtc.php(41): ABJ_404_Solution_DatabaseUpgradesEtc->reallyCreateDatabaseTables(true)
+#5 /www/wwwroot/www.msgamego.com/wp-content/plugins/404-solution/includes/PluginLogic.php(386): ABJ_404_Solution_DatabaseUpgradesEtc->createDatabaseTables(true)
+#6 /www/wwwroot/www.msgamego.com/wp-content/plugins/404-solution/includes/PluginLogic.php(346): ABJ_404_Solution_PluginLogic->updateToNewVersionAction(Array)
+#7 /www/wwwroot/www.msgamego.com/wp-content/plugins/404-solution/includes/PluginLogic.php(316): ABJ_404_Solution_PluginLogic->updateToNewVersion(Array)
+#8 /www/wwwroot/www.msgamego.com/wp-content/plugins/404-solution/includes/SpellChecker.php(27): ABJ_404_Solution_PluginLogic->getOptions()
+#9 /www/wwwroot/www.msgamego.com/wp-content/plugins/404-solution/includes/SpellChecker.php(43): ABJ_404_Solution_SpellChecker::getInstance()
+#10 /www/wwwroot/www.msgamego.com/wp-content/plugins/404-solution/includes/Loader.php(51): ABJ_404_Solution_SpellChecker::init()
+#11 /www/wwwroot/www.msgamego.com/wp-content/plugins/404-solution/404-solution.php(76): require_once('/www/wwwroot/ww...')
+#12 /www/wwwroot/www.msgamego.com/wp-admin/includes/plugin.php(670): include_once('/www/wwwroot/ww...')
+#13 /www/wwwroot/www.msgamego.com/wp-admin/plugins.php(58): activate_plugin('404-solution/40...', 'https://www.msg...', false)
+#14 {main}
+2023-03-07 23:23:38 CST (INFO): 640756f9494e13.36472652: Updating database version to 2.31.11 (end).
+2023-03-07 23:23:38 CST (INFO): deleteOldRedirectsCron. Old captured URLs removed: 0, Old automatic redirects removed: 0, Old manual redirects removed: 0, Old log lines removed: 0, New log size: 0MB, Duplicate rows deleted: 0, Debug file size limited: false, Admin email notification option turned off., Permlink cache rows updated: 0, User initiated: false
+2023-03-07 23:28:41 CST (INFO): deleteOldRedirectsCron. Old captured URLs removed: 0, Old automatic redirects removed: 0, Old manual redirects removed: 0, Old log lines removed: 0, New log size: 0MB, Duplicate rows deleted: 0, Debug file size limited: false, Admin email notification option turned off., Permlink cache rows updated: 0, User initiated: false
+2023-03-08 00:10:11 CST (INFO): deleteOldRedirectsCron. Old captured URLs removed: 0, Old automatic redirects removed: 0, Old manual redirects removed: 0, Old log lines removed: 0, New log size: 0.01MB, Duplicate rows deleted: 0, Debug file size limited: false, Admin email notification option turned off., Permlink cache rows updated: 0, User initiated: false
+2023-03-08 02:12:04 CST (INFO): deleteOldRedirectsCron. Old captured URLs removed: 0, Old automatic redirects removed: 0, Old manual redirects removed: 0, Old log lines removed: 0, New log size: 0.01MB, Duplicate rows deleted: 0, Debug file size limited: false, Not enough 404s found to send an admin notification email (3)., Permlink cache rows updated: 0, User initiated: false
+2023-03-08 12:40:28 CST (INFO): deleteOldRedirectsCron. Old captured URLs removed: 0, Old automatic redirects removed: 0, Old manual redirects removed: 0, Old log lines removed: 0, New log size: 0.1MB, Duplicate rows deleted: 0, Debug file size limited: false, Not enough 404s found to send an admin notification email (56)., Permlink cache rows updated: 0, User initiated: false
+2023-03-09 12:41:21 CST (INFO): deleteOldRedirectsCron. Old captured URLs removed: 0, Old automatic redirects removed: 0, Old manual redirects removed: 0, Old log lines removed: 0, New log size: 0.52MB, Duplicate rows deleted: 0, Debug file size limited: false, Not enough 404s found to send an admin notification email (150)., Permlink cache rows updated: 0, User initiated: false
+2023-03-10 12:40:42 CST (INFO): deleteOldRedirectsCron. Old captured URLs removed: 0, Old automatic redirects removed: 0, Old manual redirects removed: 0, Old log lines removed: 0, New log size: 0.85MB, Duplicate rows deleted: 0, Debug file size limited: false, Not enough 404s found to send an admin notification email (240)., Permlink cache rows updated: 0, User initiated: false
+2023-03-11 12:40:31 CST (INFO): deleteOldRedirectsCron. Old captured URLs removed: 0, Old automatic redirects removed: 0, Old manual redirects removed: 0, Old log lines removed: 0, New log size: 1.13MB, Duplicate rows deleted: 0, Debug file size limited: false, Not enough 404s found to send an admin notification email (399)., Permlink cache rows updated: 0, User initiated: false
+2023-03-12 01:56:36 CST (INFO): Maybe avoided infite redirects to/from: /unmissable?name=三影文化
+2023-03-12 01:57:17 CST (INFO): Maybe avoided infite redirects to/from: /unmissable?name=三影文化
+2023-03-12 12:40:33 CST (INFO): deleteOldRedirectsCron. Old captured URLs removed: 0, Old automatic redirects removed: 0, Old manual redirects removed: 0, Old log lines removed: 0, New log size: 1.45MB, Duplicate rows deleted: 0, Debug file size limited: false, Not enough 404s found to send an admin notification email (649)., Permlink cache rows updated: 0, User initiated: false
+2023-03-13 12:40:52 CST (INFO): deleteOldRedirectsCron. Old captured URLs removed: 0, Old automatic redirects removed: 0, Old manual redirects removed: 0, Old log lines removed: 0, New log size: 1.81MB, Duplicate rows deleted: 0, Debug file size limited: false, Not enough 404s found to send an admin notification email (744)., Permlink cache rows updated: 0, User initiated: false
+2023-03-14 12:40:28 CST (INFO): deleteOldRedirectsCron. Old captured URLs removed: 0, Old automatic redirects removed: 0, Old manual redirects removed: 0, Old log lines removed: 0, New log size: 2.22MB, Duplicate rows deleted: 0, Debug file size limited: false, Not enough 404s found to send an admin notification email (891)., Permlink cache rows updated: 0, User initiated: false
+2023-03-15 12:40:45 CST (INFO): deleteOldRedirectsCron. Old captured URLs removed: 0, Old automatic redirects removed: 0, Old manual redirects removed: 0, Old log lines removed: 0, New log size: 2.63MB, Duplicate rows deleted: 0, Debug file size limited: false, Not enough 404s found to send an admin notification email (984)., Permlink cache rows updated: 0, User initiated: false
+2023-03-16 12:40:33 CST (INFO): deleteOldRedirectsCron. Old captured URLs removed: 0, Old automatic redirects removed: 0, Old manual redirects removed: 0, Old log lines removed: 0, New log size: 3.05MB, Duplicate rows deleted: 0, Debug file size limited: false, Not enough 404s found to send an admin notification email (1058)., Permlink cache rows updated: 0, User initiated: false

@@ -1,0 +1,78 @@
+@media (min-width: 769px) {
+
+    .tu-box {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        /*background-color: #fff;*/;
+        padding: 5px;
+        border-radius: 4px;
+        margin-bottom: 40px;
+    }
+
+}
+
+
+.tu-item {
+    padding: 2px;
+    /* padding-bottom: 0px !important; */
+}
+
+@keyframes tupian {
+    from {
+        background-size: cover;
+    }
+    to {
+        background-size: 150% 150% !important;
+    }
+}
+
+@-webkit-keyframes tupian {
+    from {
+        background-size: cover;
+    }
+    to {
+        background-size: 150% 150% !important;
+    }
+}
+
+
+@keyframes myfirst {
+    from {
+        background-size: 140%;
+    }
+    to {
+        background-size: 160%;
+    }
+}
+
+@-webkit-keyframes myfirst /* Safari 与 Chrome */
+{
+    from {
+        background-size: 140%;
+    }
+    to {
+        background-size: 160%;
+    }
+}
+
+div.tu:hover {
+    animation: myfirst 1s;
+    -webkit-animation: myfirst 0.5s; /* Safari 与 Chrome */
+    animation-fill-mode: forwards;
+
+}
+
+@media screen and (max-width: 768px) {
+    .tu-box {
+
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        /*background-color: #fff;*/;
+        padding: 5px;
+        border-radius: 4px;
+        margin-bottom: 40px;
+    }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="592edd7e-9506-46b6-9502-3f527fa283d1" name="本地服务" url="http://localhost:63342/www.msgamego.com">
+        <fileTransfer mountedRoot="E:\MyRepository\www.msgamego.com" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>

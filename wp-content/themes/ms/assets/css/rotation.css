@@ -1,0 +1,249 @@
+.home-banner a {
+    transition: none;
+}
+
+.lewan-home-banner-box {
+    margin: 0 auto;
+    width: 282px
+}
+
+.lewan-home-banner-box .banner-indicator-box {
+    align-items: center;
+    display: block;
+    justify-content: center;
+    width: 282px
+}
+
+.lewan-home-banner-box .banner-indicator-box .banner-indicator {
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    float: right;
+    justify-content: center;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 234px
+}
+
+.lewan-home-banner-box .banner-indicator-box .banner-indicator.checked {
+    background: url(//fenwan.cdn.bcebos.com/webgame/static/lewangame/images/030cac042beb74bc1e24.png);
+    height: 97px
+}
+
+.lewan-home-banner-box .banner-indicator-box .banner-indicator.checked .title {
+    font-weight: 700
+}
+
+.lewan-home-banner-box .banner-indicator-box .banner-indicator.checked .subtitle, .lewan-home-banner-box .banner-indicator-box .banner-indicator.checked .tips {
+    display: flex
+}
+
+.lewan-home-banner-box .banner-indicator-box .banner-indicator.unchecked {
+    height: 48px
+}
+
+.lewan-home-banner-box .banner-indicator-box .banner-indicator.unchecked .title {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px
+}
+
+.lewan-home-banner-box .banner-indicator-box .banner-indicator.unchecked .subtitle, .lewan-home-banner-box .banner-indicator-box .banner-indicator.unchecked .tips {
+    display: none
+}
+
+.lewan-home-banner-box .banner-indicator-box .banner-indicator .title {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all .1s ease;
+    white-space: nowrap
+}
+
+.lewan-home-banner-box .banner-indicator-box .banner-indicator .subtitle {
+    color: #fff;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.lewan-home-banner-box .banner-indicator-box .banner-indicator .tips {
+    border: 1px solid rgba(78, 110, 242, .3);
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #4e6ef2;
+    display: flex;
+    font-size: 12px;
+    height: 16px;
+    justify-content: center;
+    line-height: 16px;
+    margin-right: 5px;
+    padding: 0 4px;
+    text-align: center
+}
+
+.lewan-home-banner-box .banner-indicator-box .banner-indicator .tips.tips-redbg {
+    border-color: rgba(247, 49, 49, .3);
+    color: #f73131
+}
+
+
+.gradual-show-swiper-box {
+    height: 479px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 1
+}
+
+.gradual-show-swiper-box .gradual-show-item-box {
+    height: 479px;
+    opacity: 0;
+    position: absolute;
+    transition: all 1s linear;
+    visibility: hidden;
+    width: 100%;
+    z-index: 9
+}
+
+.gradual-show-swiper-box .gradual-show-item-box .gradual-show-item {
+    background: 50% no-repeat;
+    height: 100%
+}
+
+.gradual-show-swiper-box .gradual-show-item-box.cur-item {
+    opacity: 1;
+    visibility: visible;
+    z-index: 12
+}
+
+.gradual-show-swiper-box .gradual-show-item-box.cur-item .gradual-show-item {
+    opacity: 1;
+    z-index: 12
+}
+
+.gradual-show-swiper-box .x-pagination-swiper {
+    align-items: center;
+    float: right;
+    height: 0;
+    justify-content: center;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    transform: translate3d(-50%, 0, 0);
+    transition: opacity .3s;
+    width: 1200px;
+    z-index: 15
+}
+
+.gradual-show-swiper-box .x-pagination-swiper .x-pagination-box {
+    background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, .6) 24%, #000 52%, rgba(0, 0, 0, .6) 77%, transparent);
+    bottom: 0;
+    float: right;
+    height: 479px;
+    opacity: .9;
+    padding-top: 48px;
+    width: 282px
+}
+
+.gradual-show-swiper-box .x-pagination-swiper .x-pagination-box .x-pagination-item {
+    float: right;
+    width: 282px
+}
+
+
+.gradual-show-swiper-boxsj {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    height: 280px;
+}
+
+.gradual-show-swiper-boxsj .gradual-show-item-box {
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    transition: all 1s linear;
+    visibility: hidden;
+    width: 100%;
+    z-index: 9
+}
+
+.gradual-show-swiper-boxsj .gradual-show-item-box .gradual-show-item {
+    background: 50% no-repeat;
+    height: 100%
+}
+
+.gradual-show-swiper-boxsj .gradual-show-item-box.cur-item {
+    opacity: 1;
+    visibility: visible;
+    z-index: 12
+}
+
+.gradual-show-swiper-boxsj .gradual-show-item-box.cur-item .gradual-show-item {
+    opacity: 1;
+    z-index: 12
+}
+
+.gradual-show-swiper-boxsj .x-pagination-swiper {
+    align-items: center;
+    float: right;
+    height: 0;
+    justify-content: center;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    transform: translate3d(-50%, 0, 0);
+    transition: opacity .3s;
+    width: 1200px;
+    z-index: 15
+}
+
+.gradual-show-swiper-boxsj .x-pagination-swiper .x-pagination-box {
+    background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, .6) 24%, #000 52%, rgba(0, 0, 0, .6) 77%, transparent);
+    bottom: 0;
+    float: right;
+    height: 479px;
+    opacity: .9;
+    padding-top: 48px;
+    width: 282px
+}
+
+.gradual-show-swiper-boxsj .x-pagination-swiper .x-pagination-box .x-pagination-item {
+    float: right;
+    width: 282px
+}
+
+
+.banner-img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+
+.cover {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: all .5s ease;
+    width: 100%;
+    z-index: 0
+}

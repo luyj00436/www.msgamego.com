@@ -1,0 +1,341 @@
+.lewan-box {
+    padding: 20px;
+    /*background-color: #fff;*/;
+    border-radius: 4px;
+}
+
+.lewan-box-header {
+    /* margin-top:20px; */
+}
+
+.lewan-box-title {
+    display: flex;
+    font-size: 20px;
+    color: #333;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.lewan-box-title::before {
+    content: '';
+    width: 6px;
+    height: 20px;
+    background: #f14027;
+    margin-right: 10px;
+}
+
+
+.lewan-box-body {
+    min-height: 200px;
+}
+
+.lewan-box-bodysj {
+    min-height: 200px;
+}
+
+
+.lewan-box-hot-game {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.game-name::-webkit-scrollbar-thumb,
+.game-name::-webkit-scrollbar-track,
+.game-name::-webkit-scrollbar {
+    display: none !important;
+}
+
+.game-on-shelf a {
+    transition: none;
+}
+
+.lewan-box-hot-game .swiper-navigate {
+    top: 160px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAACgBAMAAACidhJ5AAAAKlBMVEXz9fc8PT0MDQ2ztLbt7/EDAwMzMzOPkZGwsrO0trcRERJBQkJLS0wAAADx0XmqAAAADXRSTlOAzPKTgfvToJSS7cnDOQclrgAAAGVJREFUWMPty7ENQFAARdEvJFoLqFQKiRhCbxClXqO3iMoCVqB/u4gBvPJT3NPe3AAAAD4225oPNk8qTM02ne7uZPe0Yf/nvkiHyaWu9b0mUu3n1s4Vc6w5G+0c+mc2+x4AAEAcN66pQ1dE0V+dAAAAAElFTkSuQmCC) 50%/cover no-repeat;
+    bottom: 125px;
+    height: 80px;
+    position: absolute;
+    transition: all .5s ease;
+    width: 30px;
+    z-index: 10;
+}
+
+.lewan-box-hot-game .swiper-navigate:hover {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAACgBAMAAACidhJ5AAAAJ1BMVEX19vcAAABiYmIYGBjP0NHy8/TQ0dLNzs+1trdUVFVzc3RnaGghISHLa9lBAAAAY0lEQVRYw+3LwQ1AQAAF0Y3YxPXTACVIxFmiCjclUIISdKAIDehMFOAfl8O862QCAAD42GJrUdq8qTY1XrL7KLvnLfs/91U6TG5Uze81k3o/D3bumFPNcbdzmJ7Z7GcAAABp3FwpElblFmCnAAAAAElFTkSuQmCC)
+}
+
+.lewan-box-hot-game .swiper-navigate.disable {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAACgBAMAAACidhJ5AAAAHlBMVEXz9ffa29vU1dXs7u/s7u/a2trn6enV1dbd3d7S0tLXPFp3AAAACXRSTlOAzPKTktOg7cP/yadHAAAAXklEQVRYw+3LsQ1AUBhF4V+EWqJS0+heTKA1ghGMoLMC3d2WBdzyUZyvPTkBAAA+lmytT5s3NS7vsvsku5cj+z/3RTpM7nTN77WQBj8nO/fMueZY7RzVMzttAACAPG4vjS/4GLUrewAAAABJRU5ErkJggg==);
+    cursor: not-allowed
+}
+
+.lewan-box-hot-game .swiper-navigate.swiper-prev {
+    left: 0;
+    transform: rotate(180deg);
+    transition: 0s;
+}
+
+.lewan-box-hot-game .swiper-navigate.swiper-next {
+    right: 0;
+}
+
+.game-on-shelf {
+    background: #fff;
+    box-sizing: border-box;
+    padding: 35px 0px;
+    display: flex;
+
+}
+
+.game-on-shelf .module-header {
+    margin-bottom: 20px
+}
+
+.game-on-shelf .game-card-wrap {
+    width: 250px;
+    margin-right: 56px;
+
+}
+
+.game-on-shelf .game-card-wrap.is-today .publish-info .circle:before {
+    border-color: #f14027
+}
+
+.game-on-shelf .game-card-wrap.is-today .publish-info .circle:after {
+    background: #f14027
+}
+
+.game-on-shelf .game-card-wrap.is-today .publish-info .time {
+    color: #f14027
+}
+
+.game-on-shelf .game-card-wrap .game-main:hover:before {
+    opacity: 0
+}
+
+.game-on-shelf .game-card-wrap .game-main:hover .cover {
+    transform: scale(1.2)
+}
+
+.game-on-shelf .game-card-wrap .game-main:hover .info-box:before {
+    background: rgba(0, 0, 0, .6)
+}
+
+.game-on-shelf .game-card-wrap .game-main:hover .info-box .info-main {
+    transform: translateZ(0)
+}
+
+.game-on-shelf .game-card-wrap .game-main:hover .info-box .info-main:before {
+    opacity: 0
+}
+
+.game-on-shelf .game-card-wrap .game-main:hover .info-box .info-main .game-desc {
+    opacity: 1
+}
+
+.game-on-shelf .game-card-wrap .publish-info {
+    margin: 0 auto 20px
+}
+
+.game-on-shelf .game-card-wrap .publish-info .circle {
+    background: #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    content: "";
+    display: block;
+    height: 30px;
+    margin: 0 auto;
+    position: relative;
+    width: 30px
+}
+
+.game-on-shelf .game-card-wrap .publish-info .circle:before {
+    border: 1px solid #333;
+    border-radius: 50%;
+    content: "";
+    height: 20px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 20px
+}
+
+.game-on-shelf .game-card-wrap .publish-info .circle:after {
+    background: #333;
+    border-radius: 50%;
+    content: "";
+    height: 12px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 12px
+}
+
+.game-on-shelf .game-card-wrap .publish-info .time {
+    color: #333;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 5px auto 0;
+    text-align: center
+}
+
+.game-on-shelf .game-card-wrap .game-main {
+    height: 330px;
+    overflow: hidden;
+    position: relative
+}
+
+.game-on-shelf .game-card-wrap .game-main .cover {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: all .5s ease;
+    width: 100%;
+    z-index: 0
+}
+
+.game-on-shelf .game-card-wrap .game-main:before {
+    background-image: linear-gradient(180deg, transparent, #000);
+    bottom: 0;
+    content: "";
+    height: 90px;
+    left: 0;
+    opacity: .7;
+    position: absolute;
+    transition: all .5s ease;
+    width: 100%;
+    z-index: 1
+}
+
+.game-on-shelf .game-card-wrap .game-main .info-box {
+    height: 100%;
+    position: relative;
+    z-index: 2
+}
+
+.game-on-shelf .game-card-wrap .game-main .info-box:before {
+    background: transparent;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: all .5s ease;
+    width: 100%
+}
+
+.game-on-shelf .game-card-wrap .game-main .info-box .info-main {
+    box-sizing: border-box;
+    padding: 63px 20px 0;
+    position: relative;
+    transform: translate3d(0, 195px, 0);
+    transition: all .5s ease
+}
+
+.game-on-shelf .game-card-wrap .game-main .info-box .info-main .game-name {
+    color: #fff;
+    font-size: 24px;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.game-on-shelf .game-card-wrap .game-main .info-box .info-main .game-tags {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 10px auto 0;
+    min-height: 40px
+}
+
+.game-on-shelf .game-card-wrap .game-main .info-box .info-main .game-tags .tag-item {
+    border: 1px solid rgba(255, 255, 255, .4);
+    border-radius: 2px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    margin: 0 10px 0 0;
+    padding: 0 4px
+}
+
+.game-on-shelf .game-card-wrap .game-main .info-box .info-main .game-desc {
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    color: #fff;
+    display: -webkit-box;
+    font-size: 12px;
+    height: 76px;
+    line-height: 19px;
+    opacity: 0;
+    overflow: hidden;
+    transition: all .5s ease
+}
+
+.game-on-shelf .game-card-wrap .game-main .info-box .info-main .go-target {
+    border: 1px solid #fff;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #fff;
+    display: block;
+    font-size: 12px;
+    line-height: 28px;
+    margin: 20px auto 0;
+    overflow-x: hidden;
+    padding: 0 10px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 208px
+}
+
+.game-on-shelf .x-swiper {
+    position: relative
+}
+
+.game-on-shelf .x-swiper:before {
+    background: #333;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: 15px;
+    width: 100%
+}
+
+.game-on-shelf .x-swiper .x-pagination {
+    display: none
+}
+
+.game-on-shelf .x-swiper .x-swiper-navigate {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAACgBAMAAACidhJ5AAAAKlBMVEXz9fc8PT0MDQ2ztLbt7/EDAwMzMzOPkZGwsrO0trcRERJBQkJLS0wAAADx0XmqAAAADXRSTlOAzPKTgfvToJSS7cnDOQclrgAAAGVJREFUWMPty7ENQFAARdEvJFoLqFQKiRhCbxClXqO3iMoCVqB/u4gBvPJT3NPe3AAAAD4225oPNk8qTM02ne7uZPe0Yf/nvkiHyaWu9b0mUu3n1s4Vc6w5G+0c+mc2+x4AAEAcN66pQ1dE0V+dAAAAAElFTkSuQmCC) 50%/cover no-repeat;
+    bottom: 125px;
+    height: 80px;
+    position: absolute;
+    transition: all .5s ease;
+    width: 30px
+}
+
+.game-on-shelf .x-swiper .x-swiper-navigate:hover {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAACgBAMAAACidhJ5AAAAJ1BMVEX19vcAAABiYmIYGBjP0NHy8/TQ0dLNzs+1trdUVFVzc3RnaGghISHLa9lBAAAAY0lEQVRYw+3LwQ1AQAAF0Y3YxPXTACVIxFmiCjclUIISdKAIDehMFOAfl8O862QCAAD42GJrUdq8qTY1XrL7KLvnLfs/91U6TG5Uze81k3o/D3bumFPNcbdzmJ7Z7GcAAABp3FwpElblFmCnAAAAAElFTkSuQmCC)
+}
+
+.game-on-shelf .x-swiper .x-swiper-navigate.disable {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAACgBAMAAACidhJ5AAAAHlBMVEXz9ffa29vU1dXs7u/s7u/a2trn6enV1dbd3d7S0tLXPFp3AAAACXRSTlOAzPKTktOg7cP/yadHAAAAXklEQVRYw+3LsQ1AUBhF4V+EWqJS0+heTKA1ghGMoLMC3d2WBdzyUZyvPTkBAAA+lmytT5s3NS7vsvsku5cj+z/3RTpM7nTN77WQBj8nO/fMueZY7RzVMzttAACAPG4vjS/4GLUrewAAAABJRU5ErkJggg==);
+    cursor: not-allowed
+}
+
+.game-on-shelf .x-swiper .x-swiper-navigate.x-swiper-prev {
+    left: 0;
+    transform: rotate(180deg)
+}
+
+.game-on-shelf .x-swiper .x-swiper-navigate.x-swiper-next {
+    right: 0
+}
